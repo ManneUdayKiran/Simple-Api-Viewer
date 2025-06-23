@@ -4,15 +4,10 @@
   font-family: sans-serif;
 }
 
-input {
+input, select, button {
   padding: 0.5rem;
-  width: 300px;
-  margin-right: 1rem;
-}
-
-button {
-  padding: 0.5rem 1rem;
-  cursor: pointer;
+  margin: 0.5rem;
+  font-size: 1rem;
 }
 
 .gallery {
@@ -28,4 +23,20 @@ button {
   height: 200px;
   object-fit: cover;
   border-radius: 10px;
+}
+
+/* Spinner CSS */
+.spinner {
+  margin: 3rem auto;
+  width: 60px;
+  height: 60px;
+  border: 6px solid #ccc;
+  border-top: 6px solid #333;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
